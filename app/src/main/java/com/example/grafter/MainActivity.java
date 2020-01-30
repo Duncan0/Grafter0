@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText Password;
     private Button Login;
     private TextView Error;
+    private Button Create;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Password = (EditText)findViewById(R.id.textPassword);
         Login = (Button)findViewById(R.id.loginButton);
         Error = (TextView)findViewById(R.id.wrongPassword);
+        Create = (Button) findViewById((R.id.createButton));
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,9 +36,16 @@ public class MainActivity extends AppCompatActivity {
                 validate(Name.getText().toString(), Password.getText().toString());
             }
         });
+
+        Create.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this, CreateAccount.class);
+                startActivity(intent);
+            }
+        });
+
     }
-
-
 
     private void validate (String userName, String userPassword){
         if ((userName.equals("Admin")) && (userPassword.equals("Password"))) {

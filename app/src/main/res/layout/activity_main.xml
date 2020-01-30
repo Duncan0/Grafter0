@@ -51,12 +51,9 @@
         style="@android:style/Widget.Button.Inset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
+        android:background="#F7F7F7"
         android:bufferType="normal"
-        android:shadowColor="#80000000"
-        android:shadowDx="50"
-        android:shadowDy="50"
-        android:shadowRadius="50"
+        android:shadowColor="#00000000"
         android:text="LOGIN"
         android:textAllCaps="true"
         android:textColor="#000000"
@@ -82,5 +79,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.632" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New to Grafter?"
+        app:layout_constraintBottom_toTopOf="@+id/createButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrongPassword"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:background="#FAFAFA"
+        android:text="Create Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrongPassword"
+        app:layout_constraintVertical_bias="0.776" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
