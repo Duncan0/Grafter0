@@ -3,4 +3,11 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">LOGIN</string>
+    <string name="new_to_grafter">New to Grafter?</string>
+    <string name="create_account">Create Account</string>
+    <string name="incorrect_username_or_password">Incorrect Username or Password!</string>
+    <string name="grafter">Grafter</string>
 </resources>
