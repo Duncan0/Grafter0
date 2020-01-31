@@ -21,10 +21,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Name = (EditText)findViewById(R.id.textUsername);
-        Password = (EditText)findViewById(R.id.textPassword);
-        Login = (Button)findViewById(R.id.loginButton);
-        Create = (Button) findViewById((R.id.createButton));
+        Name = findViewById(R.id.textUsername);
+        Password = findViewById(R.id.textPassword);
+        Login = findViewById(R.id.loginButton);
+        Create = findViewById((R.id.createButton));
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent (LoginActivity.this, HomeActivity.class);
             startActivity(intent);
         }else{
+            // shows a popup
             Toast.makeText(getApplicationContext(), "Invalid Username or password", Toast.LENGTH_LONG).show();
         }
     }
