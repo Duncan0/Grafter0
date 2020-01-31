@@ -30,15 +30,16 @@ public class CreateAccount extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
+        // Declare all UI elements
         Email = findViewById(R.id.newEmailAddress);
         FirstName = findViewById(R.id.newFirstName);
         LastName = findViewById(R.id.newLastName);
         Phone = findViewById(R.id.newPhoneNumber);
         Password = findViewById(R.id.newPassword);
-
         AccountType = findViewById(R.id.accountTypeSpinner);
-
         SignUp = findViewById((R.id.createButton));
+
+        //todo add create account utility using Android built in account package
 
     }
 }
