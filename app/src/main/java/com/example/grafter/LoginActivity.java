@@ -48,7 +48,10 @@ public class LoginActivity extends AppCompatActivity {
         if ((userName.equals("Admin")) && (userPassword.equals("Password"))) {
             Intent intent = new Intent (LoginActivity.this, HomeActivity.class);
             startActivity(intent);
-        }else{
+        } else if (userName.equals("") || userPassword.equals("")) {
+            Toast.makeText(getApplicationContext(), "Please enter a username and password", Toast.LENGTH_LONG).show();
+        }
+        else {
             // shows a popup
             Toast.makeText(getApplicationContext(), "Invalid Username or password", Toast.LENGTH_LONG).show();
         }

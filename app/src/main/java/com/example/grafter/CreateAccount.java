@@ -39,7 +39,7 @@ public class CreateAccount extends AppCompatActivity {
         AccountType = findViewById(R.id.accountTypeSpinner);
         SignUp = findViewById((R.id.createButton));
 
-        //todo add create account utility using Android built in account package
+        //todo add create account
 
     }
 }
