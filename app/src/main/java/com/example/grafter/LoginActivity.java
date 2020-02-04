@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     private void validate (String userName, String userPassword){
         // check accounts
         if ((userName.equals("Admin")) && (userPassword.equals("Password"))) {
-            Intent intent = new Intent (LoginActivity.this, HomeActivity.class);
+            Intent intent = new Intent (LoginActivity.this, FreelancerHomeFragment.class);
             startActivity(intent);
         } else if (userName.equals("") || userPassword.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter a username and password", Toast.LENGTH_LONG).show();
