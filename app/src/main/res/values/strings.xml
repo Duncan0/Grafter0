@@ -17,6 +17,9 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="account_type">Account type</string>
+    <string name="home">Home</string>
+    <string name="post_a_service">Post A Service</string>
+    <string name="account">Account</string>
 
     <string-array name="account_types">
         <item>Customer</item>
